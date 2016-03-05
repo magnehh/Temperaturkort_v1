@@ -1,0 +1,211 @@
+Schematic/symbol design rules:
+==============================
+All components should be made as generic as possible. Supplier should NOT be linked in the library. If possible symbols should not be part specific. Part specfication should be determined by footprints for generic components.
+
+When drawing schematic symbold, make the symbols compact! Pinlength of 100 mil/2,54 mm is recommended as opposed to the default. Also set Customize Position and set margin to 20 mil / 0,48 mm.
+
+Within reasonable graphical limitations, connectors should represent the physical layout of the connector. When drawing connectors, the pin placement should be seen into the receptacle from the lead.
+
+Coloring:
+---------
+Connectors, resistors, capasitors, inductors, diodes, transistors and other "primitive" blocks, that do not require seperate power supply, are to be drawn in blue color. Color 229 (color code 16711680 = 0xFF0000) in Altium. Yellow blocks are reserved for active block components like IC-s with seperate power supply pins. Function-block symbols like op-amps, logical blocks, etc, that are split blocks of in integrated circuits, should be drawn with black, not blue. When blocks are drawn as part of an ic-block, the blocks may have white background, distinguishing them from the yellow background of the IC.
+
+Text font and placement:
+------------------------
+Fontsize 10 Times New Roman should be used as standard. 8 May be used in a pinch.
+Designator margin from block is recommended to be 10 mil. 
+When using 90 degree rotation for pin names, a margin of -20 is recommended.
+
+IEC vs. ANSI logic block symbols 
+--------------------------------
+Together with the American National Standards Institute (ANSI), the Institute of ANSI Electrical and Electronic Engineers (IEEE) has developed a standard set of logic IEEE symbols. The most recent revision of the standard is ANSI/IEEE Std 91-1984, IEEE Standard Graphic Symbols for Logic Functions. It is compatible with standard 617 of the International Electrotechnical Commission (IEC). The U.S. Department of Defense(DoD) also requires this standard to be used for all logic diagrams for the U.S.DoD.
+
+The standard defines two sets of logic symbols, distinctive-shape symbols, commonly referred to as ANSI, and retangular shape symbols, referred to as IEC. The IEEE standard defines rules for drawing more complex logical symbols than the distinctive-shape symbols allow. As part of these complex logical symbols, rectangular-shape logic symbols are used. Therefore it is recommended in the design rules for lablib to use rectangular-shape symbols for logical elements. 
+
+But since some people insist on using distinctive-shape symbols, these should be supplied as alternative symbol for logical symbols. Though as an alternative, not as the primary symbol. The selection between them is done in the mode selection, choosing "Alternative 1" instead of "Normal".
+
+Active low (negated) signals:
+-----------------------------
+Altium support negated signals. This is achived by prefixing a whole name with \, e.g. \enable. This cause Altium to draw an invert line above the signal name. Individual characters may also get the negation line above by succeeding the letter by \. R/w would be denoted R/\w to get the stroke over the w. If for some reason using negated names is not an option, use the # character in front of the inverted name or section of the name.
+
+Component naming convension
+===========================
+All component names are to have a prefix stateing their component group. Different group may have sub grouping. The subgroups are presented below the main prefix list. Generic type components, within their respective grups are to have their group succeeded by __gen. Note the double understroke. This is so that generic components are sorted first within the component group. The component name is to contain describing names or abrevations commonly used to filter or distinguish the part from others. 
+
+Component names should be in "lower camel case" e.g. lowerCamelCase. The first word staring with lower case, and all succeedingh with upper case. Successive component grouping should be preseeded by
+
+The fixed prefixes are:
+-----------------------
+- bat_ for batteries
+- cap_ for capasitor
+- con_ for connector
+- dio_ for generic diode
+- fuse_ for fuses (not semionductor based)
+- ic_ for integrated citcuits
+- ind_ for inductor
+- lcd_ for liquid crystal displays (and modules)
+- motfan_ for motors and fans
+- osc_ for oscillators
+- res_ for resistor
+- rly_ for relays
+- seg_ for segment displays
+- sock_ for sockets
+- swi_ for switches
+- thy_ for thyristor
+- trform_ for transformers 
+- triac_ for triacs
+- transi_ for transistor
+- xtal_ for crystals
+- misc_ Miscellaneous stuff that do not fit anywhere
+
+
+Subgroups for batteries
+-----------------------
+<none>
+
+Subgroups for capasitor
+-----------------------
+cap_pol_  >> polarized capasitors
+cap_uni_  >> non-polarized capasitors
+cap_var_  >> variable capasitors
+
+Subgroups for connector
+-----------------------
+Generic connectors should have spacing and pin organization as part of the part name. e.g. con_head_2x07pin for a two row by 7 pin. Wheather the connector is slewed, slewed
+
+con_head     >> Headers
+con_idc      >> Insulation displacement connector
+con_dsub     >> D-sub connectors
+con_rf       >> RF-connectors
+con_bus      >> Bus specific connectors, e.g. USB, Firewire, DisplayPort, DVI, HDMI etc.
+con_gencir   >> Miscellaneous circular connectors
+con_genrect  >> Miscellaneous rectangular connector
+
+Subgroups for diode
+-----------------------
+dio_diode   >> Regular diode
+dio_led     >> Light emitting diode
+dio_zen     >> Zener diode
+dio_tun     >> Tunel diode
+dio_vcap    >> Variable capasitive diode
+dio_rect    >> Rectifier array
+dio_photo   >> Photo sensitive diode
+dio_schot   >> Schottky diode
+dio_transi  >> Transient-voltage-suppression diode
+dio_misc    >> Miscellaneous diodes not fitting into other subgroups
+
+
+Subgroups for fuses
+-----------------------
+<none>
+
+Subgroups for integrated citcuits
+-----------------------
+ic_dig_bus       >> Buss controll / driver. USB, RS-232, RS-485
+ic_dig_dsp       >> Digital signal processing
+ic_dig_eprom     >> EPROM, EEPROM FLASH etc.
+ic_dig_flash     >> FLASH
+ic_dig_fpga      >> FPGAs
+ic_dig_logic     >> Simple logic circuits 74xx, 40xx etc
+ic_dig_net       >> Networking ICs.
+ic_dig_opto      >> Digital optocouplers
+ic_dig_pld       >> Programmable logic devices
+ic_dig_ram       >> DRAM, SRAM, SDRAM, DDR-SDRAM, FP-RAM etc.
+ic_dig_rom       >> ROM
+ic_dig_rtc       >> real time clocks and timers
+ic_dig_uc        >> micro controllers
+ic_dig_cpu       >> microprocessors
+ic_lin_amp       >> Integrated amplifiers
+ic_lin_batreg    >> Battery and charge regulators
+ic_lin_codec     >> Codecs, ADC and DACs
+ic_lin_dcdc      >> DC/DC, DC/AC etc
+ic_lin_driver    >> Driver
+ic_lin_miscaudio >> Miscellaneous audio circuits not fitting into the other subgroups
+ic_lin_miscvideo >> Miscellaneous video circuits not fitting into the other subgroups
+ic_lin_mix       >> Mixers
+ic_lin_mplexsw   >> Analog multiplexers, switches and arrays, transistorbased ideal diodes.
+ic_lin_opamp     >> Operational amplifiers
+ic_lin_opto      >> Analog optocouplers
+ic_lin_pll       >> PLLs
+ic_lin_rf_txrx   >> RF receiver, transmitter, tranciver
+ic_lin_sense     >> Integrated sensors
+ic_lin_swreg     >> Switchregulators
+ic_lin_transary  >> Transistor arrays
+ic_lin_vref      >> Voltage referances
+ic_lin_vreg      >> Linear voltage regulatroe
+
+
+
+
+Subgroups for inductor
+-----------------------
+<none>
+
+Subgroups for liquid crystal displays
+-----------------------
+lcd_seg       >> Segment displays
+lcd_char      >> Character displays
+lcd_graph     >> Graphical displays
+
+Subgroups for motors and fans
+-----------------------
+<none>
+
+Subgroups for oscillators
+-----------------------
+<none>
+
+Subgroups for resistor
+-----------------------
+<none>
+
+Subgroups for relays
+-----------------------
+<none>
+
+Subgroups for segment displays
+-----------------------
+<none>
+
+Subgroups for sockets
+-----------------------
+<none>
+
+Subgroups for switches
+-----------------------
+<none>
+
+Subgroups for thyristor
+-----------------------
+<none>
+
+Subgroups for transformers 
+-----------------------
+<none>
+
+Subgroups for triacs
+-----------------------
+<none>
+
+Subgroups for transistor
+-----------------------
+transi_pnp_sig
+transi_pnp_pwr
+transi_npn_sig
+transi_npn_pwr
+transi_nmos_sig
+transi_nmos_pwr
+transi_pmos_sig
+transi_pmos_pwr
+transi_jfet_sig
+transi_jfet_pwr
+
+
+
+Subgroups for crystals
+-----------------------
+<none>
+
+Subgroups for misc
+-----------------------
+<none>

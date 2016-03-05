@@ -1,0 +1,326 @@
+Footprint design rules:
+-----------------------
+
+<TBD>
+
+
+Footprint naming convension
+---------------------------
+
+Postfix for land pattern protrusion size, e.i. the amount of protrusion of the land pattern outside the component lead footprint:
+_M for most
+_N for Nominal
+_L for least. 
+
+Least give the highest density of components.
+
+
+
+Table 3-15 IPC-7351 Land Pattern Naming Convention:
+
+COMPONENT, CATEGORY LAND PATTERN NAME
+Ball Grid Array’s, Inch Based (1.27 mm / 0.05 in Pitch) ............................... BGA127P + Number of Pin Columns X Number of Pin Rows - Pin Qty
+Ball Grid Array’s, Metric Based (1.50 mm Pitch) ....................................... BGA150P + Number of Pin Columns X Number of Pin Rows - Pin Qty
+Ball Grid Array’s, Metric Based (1.00 mm Pitch) ....................................... BGA100P + Number of Pin Columns X Number of Pin Rows - Pin Qty
+Ball Grid Array’s, Metric Based (0.80 mm Pitch) ....................................... BGA80P + Number of Pin Columns X Number of Pin Rows - Pin Qty
+Ball Grid Array’s, Metric Based (0.75 mm Pitch) ....................................... BGA75P + Number of Pin Columns X Number of Pin Rows - Pin Qty
+Ball Grid Array’s, Metric Based (0.65 mm Pitch) ....................................... BGA65P + Number of Pin Columns X Number of Pin Rows - Pin Qty
+Ball Grid Array’s, Metric Based (0.50 mm Pitch) ....................................... BGA50P + Number of Pin Columns X Number of Pin Rows - Pin Qty
+Ball Grid Array’s w/Staggered Pins (1.27 mm Pitch) .................................... SBGA127P + Number of Pin Columns X Number of Pin Rows - Pin Qty
+Capacitors, Chip, Array ............................................................... CAPCA + Pitch P + Body Width X Body Length in Metric - Pin Qty
+Capacitors, Chip, Polarized ........................................................... CAPCP + Body Size in Metric
+Capacitors, Chip, Nonpolarized ........................................................ CAPC + Body Size in Metric  exampel: CAPC2012_0h9
+Capacitors, Chip, Wire Rectangle ...................................................... CAPCWR + Body Size in Metric
+Capacitors, Molded, Nonpolarized ...................................................... CAPM + Body Size in Metric
+Capacitors, Molded, Polarized ......................................................... CAPMP + Body Size in Metric
+Capacitors, Aluminum Electrolytic ..................................................... CAPAE + Base Body Width (W) + Height (H)
+Ceramic Flat Packages ................................................................. CFP127P + Lead Span Nominal - Pin Qty
+Column Grid Array’s ................................................................... CGA + Number of Pin Columns X Number of Pin Rows - Pin Qty
+Diodes, Molded (JEDEC Standard Package) ............................................... DIOM + Body Size in Metric
+Diodes, MELF .......................................................................... DIOMELF + Body Size in Metric
+Inductors, Chip ....................................................................... INDC + Body Size in Metric
+Inductors, Chip, Array ................................................................ INDCA + Pitch P + Body Width X Body Length in Metric - Pin Qty
+Inductors, Molded ..................................................................... INDM + Body Size in Metric
+Inductors, Precision Wire Wound ....................................................... INDP + Body Size in Metric
+Plastic Leaded Chip Carriers Square (JEDEC Standard Package) .......................... PLCC - Pin Qty
+Plastic Leaded Chip Carriers Rectangular (JEDEC Standard Package) ..................... PLCCR - Pin Qty
+Plastic Leaded Chip Carrier Sockets Square ............................................ PLCCS - Pin Qty
+Plastic Leaded Chip Carrier Sockets Rectangular ....................................... PLCCRS - Pin Qty
+Plastic Quad Flat Packages, 0.635 mm Pitch, Pin 1 Side ................................ PQFPS - Pin Qty
+Plastic Quad Flat Packages, 0.635 mm Pitch, Pin 1 Center .............................. PQFPC - Pin Qty
+Bumper Quad Flat Packages, 0.635 mm Pitch, Pin 1 Side ................................. BQFPS - Pin Qty
+Bumper Quad Flat Packages, 0.635 mm Pitch, Pin 1 Center ............................... BQFPC - Pin Qty
+Quad Flat Packages, 1.00 mm Pitch ..................................................... QFP100P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Quad Flat Packages, 0.80 mm Pitch ..................................................... QFP80P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Quad Flat Packages, 0.65 mm Pitch ..................................................... QFP65P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Shrink Quad Flat Packages, 0.50 mm Pitch .............................................. SQFP50P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Shrink Quad Flat Packages, 0.40 mm Pitch .............................................. SQFP40P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Shrink Quad Flat Packages, 0.30 mm Pitch .............................................. SQFP30P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Thin Quad Flat Packages, 0.80 mm Pitch, Height £ 1.60 mm .............................. TQFP80P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Thin Quad Flat Packages, 0.65 mm Pitch, Height £ 1.60 mm .............................. TQFP65P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Thin Quad Flat Packages, 0.50 mm Pitch, Height £ 1.60 mm .............................. TSQFP50P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Thin Quad Flat Packages, 0.40 mm Pitch, Height £ 1.60 mm .............................. TSQFP40P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Thin Quad Flat Packages, 0.30 mm Pitch, Height £ 1.60 mm .............................. TSQFP30P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Ceramic Quad Flat Packages, 1.27 mm Pitch ............................................. CQFP127P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Ceramic Quad Flat Packages, 0.80 mm Pitch ............................................. CQFP80P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Ceramic Quad Flat Packages, 0.635 mm Pitch ............................................ CQFP63P + Lead Span L1 X Lead Span L2 Nominal - Pin Qty
+Quad Flat No Lead Packages 0.80 mm Pitch .............................................. QFN80P - Body Width X Body Length in Metric - Pin Qty + Thermal Pad
+Quad Flat No Lead Packages 0.65 mm Pitch .............................................. QFN65P - Body Width X Body Length in Metric - Pin Qty + Thermal Pad
+Quad Flat No Lead Packages 0.50 mm Pitch .............................................. QFN50P - Body Width X Body Length in Metric - Pin Qty + Thermal Pad
+Quad Flat No Lead Packages 0.40 mm Pitch .............................................. QFN40P - Body Width X Body Length in Metric - Pin Qty + Thermal Pad
+Quad Leadless Ceramic Chip Carriers (JEDEC Standard Package) .......................... LCC + Body Width X Body Length in Metric - Pin Qty
+Quad Leadless Ceramic Chip Carriers (Pin 1 on Side) ................................... LCCS + Body Width X Body Length in Metric - Pin Qty
+Quad Bottom Chip Carrier (JEDEC MO-217B) .............................................. QBCC + Body Width X Body Length in Metric - Pin Qty
+Resistors, Chip ....................................................................... RESC + Body Size in Metric
+Resistors, Chip, Array ................................................................ RESCA + Pitch P + Body Width X Body Length in Metric - Pin Qty
+Resistors, Molded ..................................................................... RESM + Body Size in Metric
+Resistors, MELF ....................................................................... RESMELF + Body Size in Metric
+Small Outline IC, J-Leaded 300, 350, 400, 450 mil Body Width (Pitch 1.27 mm) .......... SOJ127P + Lead Span Nominal - Pin Qty
+Small Outline IC, J-Leaded (Pitch 0.65 mm) ............................................ SOJ65P + Lead Span Nominal - Pin Qty
+Small Outline Integrated Circuit, 1.27 mm Pitch (Standard 50 mil Pitch SOICs) ......... SOIC127P + Lead Span Nominal - Pin Qty
+Small Outline Packages, 1.27 mm Pitch (Nonstandard 50 mil Pitch SOICs) ................ SOP127P + Lead Span Nominal - Pin Qty
+Small Outline Packages, 1.00 mm Pitch ................................................. SOP100P + Lead Span Nominal - Pin Qty
+Small Outline Packages, 0.80 mm Pitch ................................................. SOP80P + Lead Span Nominal - Pin Qty
+Small Outline Packages, 0.65 mm Pitch ................................................. SOP65P + Lead Span Nominal - Pin Qty
+Small Outline Packages, 0.635 mm Pitch ................................................ SOP63 + Lead Span Nominal - Pin Qty
+Shrink Small Outline Packages, 0.50 mm Pitch .......................................... SSOP50P + Lead Span Nominal - Pin Qty
+Shrink Small Outline Packages, 0.40 mm Pitch .......................................... SSOP40P + Lead Span Nominal - Pin Qty
+Shrink Small Outline Packages, 0.30 mm Pitch .......................................... SSOP30P + Lead Span Nominal - Pin Qty
+Thin Small Outline Packages, Height is £ 1.60 mm, 1.27 mm Pitch ....................... TSOP127P + Lead Span Nominal - Pin Qty
+Thin Small Outline Packages, Height is £ 1.60 mm, 1.00 mm Pitch ....................... TSOP100P + Lead Span Nominal - Pin Qty
+Thin Small Outline Packages, Height is £ 1.60 mm, 0.80 mm Pitch ....................... TSOP80P + Lead Span Nominal - Pin Qty
+Thin Small Outline Packages, Height is £ 1.60 mm, 0.65 mm Pitch ....................... TSOP65P + Lead Span Nominal - Pin Qty
+Thin Shrink Small Outline Packages, Height is £ 1.60 mm, 0.55 mm Pitch ................ TSSOP55P + Lead Span Nominal - Pin Qty
+Thin Shrink Small Outline Packages, Height is £ 1.60 mm, 0.50 mm Pitch ................ TSSOP50P + Lead Span Nominal - Pin Qty
+Thin Shrink Small Outline Packages, Height is £ 1.60 mm, 0.40 mm Pitch ................ TSSOP40P + Lead Span Nominal - Pin Qty
+Thin Shrink Small Outline Packages, Thin (Height is £ 1.60 mm) 0.30 mm Pitch .......... TSSOP30P + Lead Span Nominal - Pin Qty
+Very Small Outline Packages, 0.762 mm Pitch (0.30 in Pitch) ........................... VSOP762P + Lead Span Nominal - Pin Qty
+SOD (Example: SOD3705 = SOD123) ....................................................... SOD + Lead Span Nominal + Body Width
+SON - Dual No Lead Packages 0.3 - 0.8 mm Pitch ........................................ SON + Pitch (P) - Body Width X Body Length - Pin Qty + Thermal Pad
+SOT89 (JEDEC Standard Package) ........................................................ SOT89
+SOT143 (JEDEC Standard Package) ....................................................... SOT143
+SOT343 (JEDEC Standard Package) ....................................................... SOT343
+SOT143 Reverse (JEDEC Standard Package) ............................................... SOT143R
+SOT343 Reverse (JEDEC Standard Package) ............................................... SOT343R
+SOT223 (JEDEC Standard Package) (Example: SOT230P700-4N) .............................. SOT + Pitch (P) + Lead Span Nominal - Pin Qty
+SOT Generic Package 0.65 mm Pitch ..................................................... SOT65P + Lead Span Nominal - Pin Qty
+SOT Generic Package 0.95 mm Pitch ..................................................... SOT95P + Lead Span Nominal - Pin Qty
+TO (Generic DPAK) (Example: TO228P970-3N) ............................................. TO + Pitch (P) + Lead Span + Pin Qty
+
+
+FOr referance:
+==============
+
+All footprints names are to be named with a prefix abbrevation for their package type, followed by the pin number and deviation or variant of the footprint.
+
+The standard abbrevations are as follows: [from wikipedia.org, references in bottom of document]
+
+Two-terminal packages:
+    Rectangular passive components (mostly resistors and capacitors): 
+        01005 (0402 metric): 0.4 mm × 0.2 mm (0.016 in × 0.0079 in). Typical power rating for resistors = 0.031 watt[8]
+        0201 (0603 metric): 0.6 mm × 0.3 mm (0.024 in × 0.012 in). Typical power rating for resistors = 0.05 watt[8]
+        0402 (1005 metric): 1.0 mm × 0.5 mm (0.039 in × 0.020 in). Typical power rating for resistors = 0.1 [8] or 0.062 watt[9]
+        0603 (1608 metric): 1.6 mm × 0.8 mm (0.063 in × 0.031 in). Typical power rating for resistors = 0.1 watt[8]
+        0805 (2012 metric): 2.0 mm × 1.25 mm (0.079 in × 0.049 in). Typical power rating for resistors = 0.125 watt[8]
+        1008 (2520 metric): 2.5 mm × 2.0 mm (0.098 in × 0.079 in). Typical inductor and ferrite bead package[10]
+        1206 (3216 metric): 3.2 mm × 1.6 mm (0.13 in × 0.063 in). Typical power rating for resistors = 0.25 watt[8]
+        1210 (3225 metric): 3.2 mm × 2.5 mm (0.13 in × 0.098 in). Typical power rating for resistors = 0.5 watt[8]
+        1806 (4516 metric): 4.5 mm × 1.6 mm (0.18 in × 0.063 in)[11]
+        1812 (4532 metric): 4.5 mm × 3.2 mm (0.18 in × 0.13 in). Typical power rating for resistors = 0.75 watt[8]
+        2010 (5025 metric): 5.0 mm × 2.5 mm (0.20 in × 0.098 in). Typical power rating for resistors = 0.75 watt[8]
+        2512 (6332 metric): 6.4 mm × 3.2 mm (0.25 in × 0.13 in). Typical power rating for resistors = 1 watt[8]
+        2920: 7.4 mm × 5.1 mm (0.29 in × 0.20 in)[12]
+    Tantalum capacitors length (typ.) x width (typ.) x height (max.):[13][14] 
+        EIA 2012-12 (Kemet R, AVX R): 2.0 mm × 1.3 mm × 1.2 mm
+        EIA 3216-10 (Kemet I, AVX K): 3.2 mm × 1.6 mm × 1.0 mm
+        EIA 3216-12 (Kemet S, AVX S): 3.2 mm × 1.6 mm × 1.2 mm
+        EIA 3216-18 (Kemet A, AVX A): 3.2 mm × 1.6 mm × 1.8 mm
+        EIA 3528-12 (Kemet T, AVX T): 3.5 mm × 2.8 mm × 1.2 mm
+        EIA 3528-21 (Kemet B, AVX B): 3.5 mm × 2.8 mm × 2.1 mm
+        EIA 6032-15 (Kemet U, AVX W): 6.0 mm × 3.2 mm × 1.5 mm
+        EIA 6032-28 (Kemet C, AVX C): 6.0 mm × 3.2 mm × 2.8 mm
+        EIA 7260-38 (Kemet E, AVX V): 7.3 mm × 6.0 mm × 3.8 mm
+        EIA 7343-20 (Kemet V, AVX Y): 7.3 mm × 4.3 mm × 2.0 mm
+        EIA 7343-31 (Kemet D, AVX D): 7.3 mm × 4.3 mm × 3.1 mm
+        EIA 7343-43 (Kemet X, AVX E): 7.3 mm × 4.3 mm × 4.3 mm
+    Aluminium capacitors:[15][16][17] 
+        (Panasonic / CDE A, Chemi-Con B): 3.3 mm × 3.3 mm
+        (Panasonic B, Chemi-Con D): 4.3 mm × 4.3 mm
+        (Panasonic C, Chemi-Con E): 5.3 mm × 5.3 mm
+        (Panasonic D, Chemi-Con F): 6.6 mm × 6.6 mm
+        (Panasonic E/F, Chemi-Con H): 8.3 mm × 8.3 mm
+        (Panasonic G, Chemi-Con J): 10.3 mm × 10.3 mm
+        (Chemi-Con K): 13.0 mm × 13.0 mm
+        (Panasonic H): 13.5 mm × 13.5 mm
+        (Panasonic J, Chemi-Con L): 17.0 mm × 17.0 mm
+        (Panasonic K, Chemi-Con M): 19.0 mm × 19.0 mm
+    SOD: Small Outline Diode 
+        SOD-723: 1.4 × 0.6 × 0.59 mm [18]
+        SOD-523: 1.25 × 0.85 × 0.65 mm [19]
+        SOD-323 (SC-90): 1.7 × 1.25 × 0.95 mm [20]
+        SOD-128: 5 × 2.7 × 1.1 mm [21]
+        SOD-123: 3.68 × 1.17 × 1.60 mm [22]
+        SOD-80C: 3.50 × 1.50 × More info [23]
+    MELF (Metal Electrode Leadless Face): mostly resistors and diodes; barrel shaped components, dimensions do not match those of rectangular references for identical codes. 
+        MicroMelf (MMU) Size 0102: length: 2.2 mm, diam.: 1.1 mm. Typical rating for resistors = 0.2 to 0.3 watt / 150 V[24]
+        MiniMelf (MMA) Size 0204: length: 3.6 mm, diam.: :1.4 mm. Typical rating for resistors = 0.25 to 0.4 watt / 200 V[24]
+        Melf (MMB) Size 0207: length: 5.8 mm, diam.: 2.2 mm. Typical rating for resistors = 0.4 to 1 watt / 300 V[24]
+
+Three-terminal packages:
+    SOT: Small Outline Transistor, three terminals 
+        SOT-223: 6.7 mm × 3.7 mm × 1.8 mm body: four terminals, one of which is a large heat-transfer pad [25]
+        SOT-89: 4.5 mm × 2.5 mm × 1.5 mm body: four terminals, center pin is connected to a large heat-transfer pad [26]
+        SOT-23 (SC-59, TO-236-3): 2.9 mm × 1.3/1.75 mm × 1.3 mm body: three terminals for a transistor [27]
+        SOT-323 (SC-70): 2 mm × 1.25 mm × 0.95 mm body: three terminals [28]
+        SOT-416 (SC-75): 1.6 mm × 0.8 mm × 0.8 mm body: three terminals [29]
+        SOT-663: 1.6 mm × 1.6 mm × 0.55 mm body: three terminals [30]
+        SOT-723: 1.2 mm × 0.8 mm × 0.5 mm body: three terminals: flat lead[31]
+        SOT-883 (SC-101): 1 mm × 0.6 mm × 0.5 mm body: three terminals: leadless [32]
+    DPAK (TO-252, SOT-428): Discrete Packaging. Developed by Motorola to house higher powered devices. Comes in three- or five-terminal versions [33]
+        D2PAK (TO-263, SOT-404): bigger than the DPAK; basically a surface mount equivalent of the TO220 through-hole package. Comes in 3, 5, 6, 7, 8 or 9-terminal versions [34]
+        D3PAK (TO-268): even larger than D2PAK [35]
+
+Five- and six-terminal packages:
+    SOT: small-outline transistor, with more than three terminals 
+    SOT-23-5 (SOT-25): 2.9 mm × 1.3/1.75 mm × 1.3 mm body: five terminals [36]
+    SOT-23-6 (SOT-26): 2.9 mm × 1.3/1.75 mm × 1.3 mm body: six terminals [37]
+    SOT-23-8 (SOT-28): 2.9 mm × 1.3/1.75 mm × 1.3 mm body: eight terminals [38]
+    SOT-353 (SC-88A): 2 mm × 1.25 mm × 0.95 mm body: five terminals [39]
+    SOT-363 (SC-88, SC-70-6): 2 mm × 1.25 mm × 0.95 mm body: six terminals [40]
+    SOT-563: 1.6 mm × 1.2 mm × 0.6 mm body: six terminals [41]
+    SOT-665: 1.6 mm × 1.6 mm × 0.55 mm body: six terminals [42]
+    SOT-666: 1.6 mm × 1.6 mm × 0.55 mm body: six terminals [43]
+    SOT-886: 1.5 mm × 1.05 mm × 0.5 mm body: six terminals: leadless
+    SOT-886: 1 mm × 1.45 mm × 0.5 mm body: six terminals: leadless [44]
+    SOT-891: 1.05 mm × 1.05 mm × 0.5 mm body: five terminals: leadless
+    SOT-953: 1 mm × 1 mm × 0.5 mm body: five terminals
+    SOT-963: 1 mm × 1 mm × 0.5 mm body: six terminals
+    SOT-1115: 0.9 mm × 1 mm × 0.35 mm body: six terminals: leadless [45]
+    SOT-1202: 1 mm × 1 mm × 0.35 mm body: six terminals: leadless [46]
+ 
+Packages with more than six terminals: [47]
+    Dual-in-line 
+        flatpack was one of the earliest surface-mounted packages.
+        SOIC: (Small-Outline Integrated Circuit), dual-in-line, 8 or more pins, gull-wing lead form, pin spacing 1.27 mm
+        SOJ: Small-Outline Package, J-Leaded, the same as SOIC except J-leaded [48]
+        TSOP: Thin Small-Outline Package, thinner than SOIC with smaller pin spacing of 0.5 mm
+        SSOP: Shrink Small-Outline Package, pin spacing of 0.65 mm, sometimes 0.635 mm or in some cases 0.8 mm
+        TSSOP: Thin Shrink Small-Outline package.
+        QSOP: Quarter-Size Small-Outline package, with pin spacing of 0.635 mm
+        VSOP: Very Small Outline Package, even smaller than QSOP; 0.4, 0.5 mm or 0.65 mm pin spacing
+        DFN: Dual Flat No-lead, smaller footprint than leaded equivalent
+    Quad-in-line 
+        PLCC: Plastic Leaded Chip Carrier, square, J-lead, pin spacing 1.27 mm
+        QFP: Quad Flat Package, various sizes, with pins on all four sides
+        LQFP: Low-profile Quad Flat Package, 1.4 mm high, varying sized and pins on all four sides
+        PQFP: Plastic Quad Flat-Pack, a square with pins on all four sides, 44 or more pins
+        CQFP: Ceramic Quad Flat-Pack, similar to PQFP
+        MQFP: Metric Quad Flat Pack, a QFP package with metric pin distribution
+        TQFP: Thin Quad Flat Pack, a thinner version of PQFP
+        QFN: Quad Flat No-lead, smaller footprint than leaded equivalent
+        LCC: Leadless Chip Carrier, contacts are recessed vertically to "wick-in" solder. Common in aviation electronics because of robustness to mechanical vibration.
+        MLP (MLF): Micro Leadframe Package (Micro Lead-Frame package) with a 0.5 mm contact pitch, no leads (same as QFN) [49]
+        PQFN: Power Quad Flat No-lead, with exposed die-pad[s] for heatsinking
+    Grid arrays 
+        PGA: Pin grid array.
+        BGA: Ball Grid Array, with a square or rectangular array of solder balls on one surface, ball spacing typically 1.27 mm
+        LGA: An array of bare lands only. Similar to in appearance to QFN, but mating is by spring pins within a socket rather than solder.
+        FBGA: Fine pitch Ball Grid Array, with a square or rectangular array of solder balls on one surface
+        LFBGA: Low profile Fine pitch Ball Grid Array, with a square or rectangular array of solder balls on one surface, ball spacing typically 0.8 mm
+        TFBGA: Thin Fine pitch Ball Grid Array, with a square or rectangular array of solder balls on one surface, ball spacing typically 0.5 mm
+        CGA: Column Grid Array, circuit package in which the input and output points are high temperature solder cylinders or columns arranged in a grid pattern.
+        CCGA: Ceramic Column Grid Array, circuit package in which the input and output points are high temperature solder cylinders or columns arranged in a grid pattern. The body of the component is ceramic.
+        µBGA: micro-BGA, with ball spacing less than 1 mm
+        LLP: Lead Less Package, a package with metric pin distribution (0.5 mm pitch).
+    Non-packaged devices (although surface-mount, these devices require specific process for assembly): 
+        COB: Chip-On-Board; a bare silicon chip, that is usually an integrated circuit, is supplied without a package (usually a lead frame overmolded with epoxy) and is attached, often with epoxy, directly to a circuit board. The chip is then wire bonded and protected from mechanical damage and contamination by an epoxy "glob-top".
+        COF: Chip-On-Flex; a variation of COB, where a chip is mounted directly to a flex circuit.
+        COG: Chip-On-Glass; a variation of COB, where a chip, typically a Liquid crystal display (LCD) controller, is mounted directly on glass:.
+
+There are often subtle variations in package details from manufacturer to manufacturer, and even though standard designations are used, designers need to confirm dimensions when laying out printed circuit boards.
+
+
+
+Referances:
+ [8] http://www.panasonic.com/industrial/components/pdf/AOA0000CE1.pdf
+ [9] http://www.esr.info/pdf/products/SMDC.pdf
+[10] http://www.kemet.com/kemet/web/homepage/kechome.nsf/file/Ferrite%20Products%20Catalog/$file/F3115.pdf
+[11] http://www.murata.com/products/catalog/pdf/c31e.pdf
+[12] http://www.littelfuse.com/data/en/Data_Sheets/SMD2920_LF_040606.pdf
+[13] http://www.avx.com/docs/catalogs/tlj.pdf
+[14] http://www.kemet.com/kemet/web/homepage/kechome.nsf/weben/9F2DE33590D9247E8525788D0059B1E1/$file/KEM_TC101_STD.pdf
+[15] http://www.panasonic.com/industrial/components/pdf/pic_fk_series.pdf
+[16] http://www.cde.com/catalogs/SMTappGuide.pdf
+[17] http://www.chemi-con.co.jp/e/catalog/pdf/al-e/al-sepa-e/003-chip/al-mva-e-111201.pdf
+[18] http://media.digikey.com/pdf/Data%20Sheets/Comchip%20PDFs/CDSP400-G.pdf
+[19] http://www.nxp.com/acrobat_download/packages/SOD523.pdf
+[20] http://www.diodes.com/zetex/_pdfs/3.0/pack/SOD323.pdf
+[21] http://www.nxp.com/documents/outline_drawing/sod128_po.pdf
+[22] http://download.siliconexpert.com/pdfs/diode/ons/mmsz4678t1-d.pdf
+[23] http://www.cdil.com/package/sod_80c.pdf
+[24] http://www.vishay.com/docs/28713/melfprof.pdf
+[25] http://www.fairchildsemi.com/dwg/MA/MA04A.pdf
+[26] <dead>
+[27] http://www.intersil.com/data/pk/P3.064.pdf
+[28] http://www.nxp.com/documents/outline_drawing/sot323_po.pdf
+[29] http://www.nxp.com/documents/outline_drawing/sot416_po.pdf
+[30] http://www.nxp.com/documents/outline_drawing/sot663_po.pdf
+[31] http://www.onsemi.com/pub_link/Collateral/631AA.PDF
+[32] http://www.nxp.com/acrobat/packages/sot883_po.pdf
+[33] http://www.diodes.com/zetex/_pdfs/3.0/pack/DPAK.pdf
+[34] http://www.fairchildsemi.com/products/discrete/packaging/d2pak_1.html
+[35] http://www.fairchildsemi.com/products/discrete/packaging/TO_268.html
+[36] http://www.intersil.com/data/pk/P5.064.pdf
+[37] http://www.intersil.com/data/pk/P6.064.pdf
+[38] http://www.intersil.com/data/pk/P8.064.pdf
+[39] http://www.nxp.com/documents/outline_drawing/sot353_po.pdf
+[40] http://www.nxp.com/documents/outline_drawing/sot363_po.pdf
+[41] http://www.centralsemi.com/PDFs/case/SOT-563PD.pdf
+[42] http://www.nxp.com/documents/outline_drawing/sot665_po.pdf
+[43] http://www.nxp.com/documents/outline_drawing/sot666_po.pdf
+[44] http://www.nxp.com/documents/outline_drawing/sot886_po.pdf
+[45] http://www.nxp.com/documents/outline_drawing/sot1115_po.pdf
+[46] http://www.nxp.com/documents/outline_drawing/sot1202_po.pdf
+[47] http://www.intersil.com/design/packages/plastic.asp
+[48] http://www.siliconfareast.com/ic-package-types.htm
+[49] http://www.carsem.com/services/mlp_dd.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

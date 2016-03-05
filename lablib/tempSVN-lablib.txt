@@ -1,0 +1,7 @@
+LabLib - Multiple changes
+- Added component fid__square
+- Added component fid__round
+- Added compoent con_bus_usb_micro
+- Added footprint fid__square
+- Added footprint fid__round
+- Added footprint con_bus_usb_micro ************************
