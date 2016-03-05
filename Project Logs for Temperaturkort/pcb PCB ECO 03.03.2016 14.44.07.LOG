@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=VCC_5V0 Pin=J2-1
+Removed Pin From Net: NetName=VCC_5V0 Pin=J2-2
+Removed Pin From Net: NetName=GND Pin=J2-3
+Removed Pin From Net: NetName=GND Pin=J2-4
+Removed Pin From Net: NetName=SPI_MOSI Pin=J2-9
+Removed Pin From Net: NetName=SPI_MISO Pin=J2-11
+Removed Pin From Net: NetName=SPI_SCK Pin=J2-13
+Removed Member From Class: ClassName=Sheet1 Member=J2

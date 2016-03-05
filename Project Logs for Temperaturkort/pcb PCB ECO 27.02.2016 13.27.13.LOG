@@ -1,0 +1,9 @@
+Change Component Comment : Designator=J3 Old Comment=ICSP New Comment=ISP
+Added Pin To Net: NetName=SPI_MOSI Pin=U1-15
+Added Pin To Net: NetName=SPI_MISO Pin=U1-16
+Added Pin To Net: NetName=SPI_SCK Pin=U1-17
+Added Pin To Net: NetName=SPI_C\S\1\ Pin=U1-23
+Added Pin To Net: NetName=SPI_C\S\2\ Pin=U1-24
+Added Pin To Net: NetName=SPI_C\S\3\ Pin=U1-25
+Added Pin To Net: NetName=SPI_C\S\4\ Pin=U1-26
+Added Pin To Net: NetName=SPI_C\S\5\ Pin=U1-27

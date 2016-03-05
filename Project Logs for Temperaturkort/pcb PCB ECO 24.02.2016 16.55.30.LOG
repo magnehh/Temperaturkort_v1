@@ -1,0 +1,43 @@
+Removed Member From Class: ClassName=Sheet2 Member=R1
+Removed Member From Class: ClassName=Sheet2 Member=R3
+Removed Member From Class: ClassName=Sheet2 Member=R4
+Removed Member From Class: ClassName=Sheet2 Member=R5
+Removed Member From Class: ClassName=Sheet2 Member=R6
+Removed Member From Class: ClassName=Sheet2 Member=R7
+Removed Member From Class: ClassName=Sheet2 Member=R8
+Removed Member From Class: ClassName=Sheet2 Member=R9
+Change Component Footprint: Designator=R2 Old Footprint=0805 New Footprint=res_0603_standard
+Added Component: Designator=R2(res_0603_standard)
+Added Component: Designator=R2(res_0603_standard)
+Added Component: Designator=R2(res_0603_standard)
+Added Component: Designator=R2(res_0603_standard)
+Added Component: Designator=R2(res_0603_standard)
+Added Component: Designator=R2(res_0603_standard)
+Added Component: Designator=R2(res_0603_standard)
+Added Component: Designator=R2(res_0603_standard)
+Added Pin To Net: NetName=FS11_2V5 Pin=R2-1
+Added Pin To Net: NetName=FS11 Pin=R2-1
+Added Pin To Net: NetName=FS12_2V5 Pin=R2-1
+Added Pin To Net: NetName=FS12 Pin=R2-1
+Added Pin To Net: NetName=FS21_2V5 Pin=R2-1
+Added Pin To Net: NetName=FS21 Pin=R2-1
+Added Pin To Net: NetName=FS22_2V5 Pin=R2-1
+Added Pin To Net: NetName=FS22 Pin=R2-1
+Added Pin To Net: NetName=VCC_3V3 Pin=R2-1
+Added Pin To Net: NetName=FS11_2V5 Pin=R2-2
+Added Pin To Net: NetName=FS12_2V5 Pin=R2-2
+Added Pin To Net: NetName=FS21_2V5 Pin=R2-2
+Added Pin To Net: NetName=FS22_2V5 Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=R2-2
+Added Member To Class: ClassName=Sheet2 Member=Component R2 10k
+Added Member To Class: ClassName=Sheet2 Member=Component R2 10k
+Added Member To Class: ClassName=Sheet2 Member=Component R2 10k
+Added Member To Class: ClassName=Sheet2 Member=Component R2 10k
+Added Member To Class: ClassName=Sheet2 Member=Component R2 10k
+Added Member To Class: ClassName=Sheet2 Member=Component R2 10k
+Added Member To Class: ClassName=Sheet2 Member=Component R2 10k
+Added Member To Class: ClassName=Sheet2 Member=Component R2 10k

@@ -1,0 +1,46 @@
+Added Component: Designator=J6(con_datamate_2row_14pin)
+Added Component: Designator=J8(con_datamate_2row_14pin)
+Added Component: Designator=J9(con_datamate_2row_14pin)
+Added Pin To Net: NetName=VCC_5V0 Pin=J6-1
+Added Pin To Net: NetName=VCC_5V0 Pin=J6-2
+Added Pin To Net: NetName=GND Pin=J6-3
+Added Pin To Net: NetName=GND Pin=J6-4
+Added Pin To Net: NetName=SPI_SCK Pin=J6-7
+Added Pin To Net: NetName=SPI_MISO Pin=J6-8
+Added Pin To Net: NetName=SPI_MOSI Pin=J6-9
+Added Pin To Net: NetName=C\S\1\ Pin=J6-10
+Added Pin To Net: NetName=C\S\2\ Pin=J6-11
+Added Pin To Net: NetName=C\S\3\ Pin=J6-12
+Added Pin To Net: NetName=C\S\4\ Pin=J6-13
+Added Pin To Net: NetName=C\S\5\ Pin=J6-14
+Added Pin To Net: NetName=VCC_5V0 Pin=J8-1
+Added Pin To Net: NetName=VCC_5V0 Pin=J8-2
+Added Pin To Net: NetName=GND Pin=J8-3
+Added Pin To Net: NetName=GND Pin=J8-4
+Added Pin To Net: NetName=FS11 Pin=J8-5
+Added Pin To Net: NetName=FS12 Pin=J8-6
+Added Pin To Net: NetName=D0 Pin=J8-7
+Added Pin To Net: NetName=D1 Pin=J8-8
+Added Pin To Net: NetName=D2 Pin=J8-9
+Added Pin To Net: NetName=D3 Pin=J8-10
+Added Pin To Net: NetName=D4 Pin=J8-11
+Added Pin To Net: NetName=D5 Pin=J8-12
+Added Pin To Net: NetName=D6 Pin=J8-13
+Added Pin To Net: NetName=D7 Pin=J8-14
+Added Pin To Net: NetName=VCC_5V0 Pin=J9-1
+Added Pin To Net: NetName=VCC_5V0 Pin=J9-2
+Added Pin To Net: NetName=GND Pin=J9-3
+Added Pin To Net: NetName=GND Pin=J9-4
+Added Pin To Net: NetName=FS21 Pin=J9-5
+Added Pin To Net: NetName=FS22 Pin=J9-6
+Added Pin To Net: NetName=D8 Pin=J9-7
+Added Pin To Net: NetName=D9 Pin=J9-8
+Added Pin To Net: NetName=D10 Pin=J9-9
+Added Pin To Net: NetName=D11 Pin=J9-10
+Added Pin To Net: NetName=D12 Pin=J9-11
+Added Pin To Net: NetName=D13 Pin=J9-12
+Added Pin To Net: NetName=D14 Pin=J9-13
+Added Pin To Net: NetName=D15 Pin=J9-14
+Added Member To Class: ClassName=Sheet2 Member=Component J6 External SPI slaves
+Added Member To Class: ClassName=Sheet2 Member=Component J8 To radio ctrlr (1/2)
+Added Member To Class: ClassName=Sheet2 Member=Component J9 To radio ctrlr (2/2)

@@ -1,0 +1,29 @@
+Added Component: Designator=C2(cap_0603_standard)
+Added Component: Designator=C3(cap_0603_standard)
+Added Component: Designator=C4(cap_0603_standard)
+Added Component: Designator=C5(cap_0603_standard)
+Added Component: Designator=C6(cap_0603_standard)
+Added Component: Designator=C7(cap_0603_standard)
+Added Component: Designator=C8(cap_0603_standard)
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=VCC_5V0 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C8-2
+Added Member To Class: ClassName=Sheet2 Member=Component C2 0.47u
+Added Member To Class: ClassName=Sheet2 Member=Component C3 100n
+Added Member To Class: ClassName=Sheet2 Member=Component C4 100n
+Added Member To Class: ClassName=Sheet2 Member=Component C5 100n
+Added Member To Class: ClassName=Sheet2 Member=Component C6 100n
+Added Member To Class: ClassName=Sheet2 Member=Component C7 100n
+Added Member To Class: ClassName=Sheet2 Member=Component C8 100n
+Added Room: Name=Sheet2

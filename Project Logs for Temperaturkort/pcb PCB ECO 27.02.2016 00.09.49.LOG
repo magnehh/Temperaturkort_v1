@@ -1,0 +1,31 @@
+Added Component: Designator=U7(ic_atmel_atmega328p)
+Added Pin To Net: NetName=SPI_MOSI Pin=U7-1
+Added Pin To Net: NetName=SPI_MISO Pin=U7-2
+Added Pin To Net: NetName=SPI_SCK Pin=U7-3
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=U7-4
+Added Pin To Net: NetName=VCC_3V3 Pin=U7-5
+Added Pin To Net: NetName=GND Pin=U7-6
+Added Pin To Net: NetName=D8 Pin=U7-9
+Added Pin To Net: NetName=D9 Pin=U7-10
+Added Pin To Net: NetName=D10 Pin=U7-11
+Added Pin To Net: NetName=D11 Pin=U7-12
+Added Pin To Net: NetName=D12 Pin=U7-13
+Added Pin To Net: NetName=D13 Pin=U7-14
+Added Pin To Net: NetName=D14 Pin=U7-15
+Added Pin To Net: NetName=D15 Pin=U7-16
+Added Pin To Net: NetName=VCC_3V3 Pin=U7-17
+Added Pin To Net: NetName=GND Pin=U7-18
+Added Pin To Net: NetName=FS22_2V5 Pin=U7-19
+Added Pin To Net: NetName=FS21_2V5 Pin=U7-20
+Added Pin To Net: NetName=JTAG_TCK Pin=U7-21
+Added Pin To Net: NetName=JTAG_TMS Pin=U7-22
+Added Pin To Net: NetName=JTAG_TDO Pin=U7-23
+Added Pin To Net: NetName=JTAG_TDI Pin=U7-24
+Added Pin To Net: NetName=FS12_2V5 Pin=U7-25
+Added Pin To Net: NetName=FS11_2V5 Pin=U7-26
+Added Pin To Net: NetName=VCC_3V3 Pin=U7-27
+Added Pin To Net: NetName=GND Pin=U7-28
+Added Pin To Net: NetName=D7 Pin=U7-30
+Added Pin To Net: NetName=D6 Pin=U7-31
+Added Pin To Net: NetName=D5 Pin=U7-32
+Added Member To Class: ClassName=Sheet2 Member=Component U7 ATmega1284P

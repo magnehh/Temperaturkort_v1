@@ -1,0 +1,5 @@
+Added Component: Designator=U4(ic_lin_reg_lm3940_sot223)
+Added Pin To Net: NetName=VCC_5V0 Pin=U4-1
+Added Pin To Net: NetName=GND Pin=U4-2
+Added Pin To Net: NetName=VCC_3V3 Pin=U4-3
+Added Member To Class: ClassName=Sheet2 Member=Component U4 V_reg
