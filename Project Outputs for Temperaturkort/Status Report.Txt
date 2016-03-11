@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Temperaturkort.PrjPcb]
+   Generated File[pcb.TXT]
+   Generated File[pcb.LDP]
+   Generated File[pcb.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 09.00.13 On 11.03.2016
