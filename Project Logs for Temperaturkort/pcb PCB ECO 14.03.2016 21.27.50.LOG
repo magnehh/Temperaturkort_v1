@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NetR2_2 Pin=U1-13
+Removed Pin From Net: NetName=SPI_C\S\4\ Pin=U1-23
+Removed Pin From Net: NetName=SPI_C\S\3\ Pin=U1-24
+Removed Pin From Net: NetName=SPI_C\S\2\ Pin=U1-27
+Removed Pin From Net: NetName=SPI_C\S\1\ Pin=U1-28
+Added Pin To Net: NetName=NetR2_2 Pin=U1-28

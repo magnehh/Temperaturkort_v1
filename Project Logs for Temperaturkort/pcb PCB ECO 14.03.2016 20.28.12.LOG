@@ -1,0 +1,4 @@
+Added Component: Designator=C7(cap_0603_standard)
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=VCC_3V3 Pin=C7-2
+Added Member To Class: ClassName=Sheet1 Member=Component C7 100n
