@@ -1,0 +1,49 @@
+Removed Pin From Net: NetName=VCC_5V0 Pin=J2-1
+Removed Pin From Net: NetName=VCC_5V0 Pin=J2-2
+Removed Pin From Net: NetName=GND Pin=J2-3
+Removed Pin From Net: NetName=GND Pin=J2-4
+Removed Pin From Net: NetName=SPI_C\S\4\ Pin=J2-8
+Removed Pin From Net: NetName=SPI_C\S\3\ Pin=J2-10
+Removed Pin From Net: NetName=SPI_MOSI Pin=J2-12
+Removed Pin From Net: NetName=SPI_SCK Pin=J2-13
+Removed Pin From Net: NetName=SPI_MISO Pin=J2-14
+Removed Pin From Net: NetName=SPI_MOSI Pin=J3-1
+Removed Pin From Net: NetName=SPI_SCK Pin=J3-7
+Removed Pin From Net: NetName=SPI_MISO Pin=J3-9
+Removed Pin From Net: NetName=GND Pin=J3-10
+Removed Member From Class: ClassName=Sheet1 Member=J2
+Change Component DesignItemId : Designator=J3 Old DesignItemId=con_head_2x05pin New DesignItemId=con_head_2x03pin
+Change Component Footprint: Designator=J3 Old Footprint=SHF-105-01-X-D-SM New Footprint=header_2x3
+Change Component Comment : Designator=J3 Old Comment=ISP New Comment=Header 2x3pin
+Added Component: Designator=C8(cap_0603_standard)
+Added Component: Designator=C9(cap_0603_standard)
+Added Component: Designator=R6(res_0603_standard)
+Added Component: Designator=R7(res_0603_standard)
+Added Pin To Net: NetName=SPI_MISO Pin=J3-1
+Added Pin To Net: NetName=SPI_SCK Pin=J3-3
+Added Pin To Net: NetName=SPI_MOSI Pin=J3-4
+Added Pin To Net: NetName=GND Pin=J3-6
+Added Pin To Net: NetName=VCC_3V3 Pin=R6-1
+Added Pin To Net: NetName=SPI_C\S\2\ Pin=R6-2
+Added Pin To Net: NetName=VCC_3V3 Pin=R7-1
+Added Pin To Net: NetName=SPI_C\S\1\ Pin=R7-2
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=NetC8_1 Pin=J4-3
+Added Pin To Net: NetName=NetC8_1 Pin=U2-2
+Added Net: Name=NetC8_1
+Added Pin To Net: NetName=NetC8_2 Pin=C8-2
+Added Pin To Net: NetName=NetC8_2 Pin=J4-4
+Added Pin To Net: NetName=NetC8_2 Pin=U2-3
+Added Net: Name=NetC8_2
+Added Pin To Net: NetName=NetC9_1 Pin=C9-1
+Added Pin To Net: NetName=NetC9_1 Pin=J4-1
+Added Pin To Net: NetName=NetC9_1 Pin=U3-2
+Added Net: Name=NetC9_1
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetC9_2 Pin=J4-2
+Added Pin To Net: NetName=NetC9_2 Pin=U3-3
+Added Net: Name=NetC9_2
+Added Member To Class: ClassName=Sheet1 Member=Component C8 100n
+Added Member To Class: ClassName=Sheet1 Member=Component C9 100n
+Added Member To Class: ClassName=Sheet1 Member=Component R6 10k
+Added Member To Class: ClassName=Sheet1 Member=Component R7 10k
